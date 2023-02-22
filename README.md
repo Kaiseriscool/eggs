@@ -9,3 +9,8 @@ Add to server => config => enjoy!
 Supports:
 
 SAM
+
+
+Model:
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2059033945
