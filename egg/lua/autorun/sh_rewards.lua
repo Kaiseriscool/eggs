@@ -6,14 +6,14 @@ EGG.Rewards['money'] = {
 }
 
 local reward_weapons = {
-    'weapon_ak47',
+    'weapon_rpg',
 }
 
 EGG.Rewards['item'] = {
     Enabled = true,
     Function = function(pp) // player
         local ii = math.random(#reward_weapons)
-        pp:Give(items[ii])
+        pp:Give(reward_weapons[ii])
     end,
 }
 

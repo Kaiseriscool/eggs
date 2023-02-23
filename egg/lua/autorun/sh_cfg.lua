@@ -22,6 +22,8 @@ EGG.OtherCfg = {
         while not reward or not reward.Enabled do
             reward = table.Random(EGG.Rewards)
         end
+        --print(reward)
+        --pp:ChatPrint("You got the reward")
         reward.Function(pp)
     end,
     TimeToSpawn = 60, // this is in mins
@@ -30,8 +32,12 @@ EGG.OtherCfg = {
 
 
  -- END OF CONFIG --
-local allDisabled = true
-for k, reward in pairs(EGG.Rewards) do
+
+hook.Add("Think" , "Real:EGG" , function()
+    hook.Remove("Think" , "Real:EGG")
+    local allDisabled = true
+    for k, reward in pairs(EGG.Rewards) do
+    --print(k , reward)
     if reward.Enabled then
         allDisabled = false
         break
@@ -41,3 +47,4 @@ end
 if allDisabled then
     error("None of the rewards are enabled! Please enable at least one reward!")
 end
+end)
