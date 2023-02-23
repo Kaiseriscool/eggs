@@ -48,3 +48,10 @@ if allDisabled then
     error("None of the rewards are enabled! Please enable at least one reward!")
 end
 end)
+
+
+
+
+function EGG:GetSpawns()
+    return EGG.SPAWN[game.GetMap()]
+end
