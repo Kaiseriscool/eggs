@@ -5,7 +5,6 @@ TOOL.Category = "Construction"
 TOOL.Name = "Egg Spawn Creator"
 TOOL.Command = nil
 local function AddSpawn(pos)
-    print(pos)
     if SERVER then return end
     net.Start("EGG_AddSpawn")
     net.WriteVector(pos)
