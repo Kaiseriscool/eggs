@@ -11,7 +11,6 @@ function EGG.LoadSpawnData()
     local data = file.Read("eggs_data/spawns.json", "DATA")
     if data then
         EGG.SPAWN = util.JSONToTable(data)
-        PrintTable(util.JSONToTable(data))
     end
 end
 net.Receive("EGG_AddSpawn", function(_, ply)
@@ -19,7 +18,6 @@ net.Receive("EGG_AddSpawn", function(_, ply)
     if _cd > CurTime() then return end
     _cd = CurTime() + 2
     local pos = net.ReadVector()
-    print(pos)
     if not ply:IsSuperAdmin() then return end
     table.insert(EGG.SPAWN[mapName], pos)
     EGG.SaveSpawnData()
