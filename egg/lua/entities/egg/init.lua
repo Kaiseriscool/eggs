@@ -16,7 +16,7 @@ end
 
 function ENT:Touch(🤓)
     if 🤓:IsPlayer() then
-        EGG.OtherCfg.OnTouch(🤓)
         self:Remove()
+        EGG.OtherCfg.OnTouch(🤓)
     end
 end
