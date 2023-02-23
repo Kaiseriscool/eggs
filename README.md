@@ -19,6 +19,8 @@ Config:
   Main cfg =>   lua/autorun/sh_cfg.lua
   
   Reward cfg => lua/autorun/sh_rewards.lua
+
+  Ingame => Tools => Egg Spawner Creator => Look and press!
   
 
 
