@@ -19,6 +19,7 @@ net.Receive("EGG_AddSpawn", function(_, ply)
     _cd = CurTime() + 2
     local pos = net.ReadVector()
     if not ply:IsSuperAdmin() then return end
+    EGG.SPAWN[mapName] = EGG.SPAWN[mapName] || {}
     table.insert(EGG.SPAWN[mapName], pos)
     EGG.SaveSpawnData()
 end)
