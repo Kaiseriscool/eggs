@@ -8,7 +8,15 @@ Add to server => config => enjoy!
 
 Supports:
 
-SAM
+SAM (Commands)
+
+VoidCases (Reward)
+
+MTokens (Rewards)
+
+Config:
+  Main cfg =>   lua/autorun/sh_cfg.lua
+  Reward cfg => lua/autorun/sh_rewards.lua
 
 
 Model:
